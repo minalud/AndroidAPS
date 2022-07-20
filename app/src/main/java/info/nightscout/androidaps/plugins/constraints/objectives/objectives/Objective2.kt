@@ -183,7 +183,7 @@ class Objective2(injector: HasAndroidInjector) : Objective(injector, "exam", R.s
             .option(Option(R.string.breadgrams_decay, true))
             .option(Option(R.string.breadgrams_calc, true))
             .hint(Hint(R.string.breadgrams_hint1))
-        )
+            )
         tasks.add(ExamTask(this, R.string.extendedcarbs_label, R.string.extendedcarbs_handling, "extendedcarbs")
             .option(Option(R.string.extendedcarbs_future, true))
             .option(Option(R.string.extendedcarbs_free, false))
