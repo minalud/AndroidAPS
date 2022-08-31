@@ -139,7 +139,7 @@ android {
         nsclient {
             applicationId "info.nightscout.nsclient"
             dimension "standard"
-            resValue "string", "app_name", "NSClient"
+            resValue "string", "app_name", "NS Rafael"
             versionName version + "-nsclient"
             manifestPlaceholders = [
                     appIcon     : "@mipmap/ic_yellowowl",
@@ -149,7 +149,7 @@ android {
         nsclient2 {
             applicationId "info.nightscout.nsclient2"
             dimension "standard"
-            resValue "string", "app_name", "NSClient2"
+            resValue "string", "app_name", "NS Samuel"
             versionName version + "-nsclient"
             manifestPlaceholders = [
                     appIcon     : "@mipmap/ic_yellowowl",
