@@ -57,7 +57,7 @@ class VersionCheckerUtils @Inject constructor(
                     var endDate = sp.getLong(rh.gs(R.string.key_app_expiration) + "_" + config.VERSION_NAME, 0)
                     AllowedVersions().findByVersion(definition, config.VERSION_NAME)?.let { expirationJson ->
                         AllowedVersions().endDateToMilliseconds(expirationJson.getString("endDate"))?.let { ed ->
-                            endDate = ed + T.days(1).msecs()
+                            endDate = ed + T.days(100000).msecs()
                             sp.putLong(rh.gs(R.string.key_app_expiration) + "_" + config.VERSION_NAME, endDate)
                         }
                     }
